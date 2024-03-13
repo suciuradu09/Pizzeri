@@ -1,36 +1,34 @@
 
-J
-java:S3740"/Provide the parametrized type for this generic.(èöâáøÿÿÿÿ
-E
-java:S3740"/Provide the parametrized type for this generic.(×è¸–
-E
-java:S3740"/Provide the parametrized type for this generic.(ñªò 
-J
-java:S3740"/Provide the parametrized type for this generic.(ƒÀÒëüÿÿÿÿ
-n
-java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÊØ
-C
-java:S1604{"(Make this anonymous inner class a lambda(ÎÃßÓüÿÿÿÿ
 p
-java:S1104;"ZMake observableList a static final constant or non-public and provide accessors if needed.(Ù½©Æ
-œ
-java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È’Êøÿÿÿÿ
+java:S3740"/Provide the parametrized type for this generic.(èöâáøÿÿÿÿJ$210e270b-30ac-472d-b0bc-d37329041524
+k
+java:S3740"/Provide the parametrized type for this generic.(×è¸–J$88acc7dd-c7c0-4940-926c-2fb923e5ed4e
+k
+java:S3740"/Provide the parametrized type for this generic.(ñªò J$79101def-9f0a-4152-9a23-d39980b7823d
+p
+java:S3740"/Provide the parametrized type for this generic.(ƒÀÒëüÿÿÿÿJ$3d81a27d-6d69-4ff3-87c4-95f9ab7e8cc7
+”
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÊØJ$bc136caa-0c20-479d-8993-48d33dd5081b
+i
+java:S1604{"(Make this anonymous inner class a lambda(ÎÃßÓüÿÿÿÿJ$41f102b4-4f9d-49e9-8177-5e597cca9945
+–
+java:S1104;"ZMake observableList a static final constant or non-public and provide accessors if needed.(Ù½©ÆJ$c6c1bfd3-381b-4a0f-8725-6c2449f8ee59
+Â
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È’ÊøÿÿÿÿJ$a77618c2-148f-4009-bec7-922737c41ab9
+˜
+java:S1450="WRemove the "menuData" field and declare it as a local variable in the relevant methods.(³£–øÿÿÿÿJ$235d7f0d-1dd0-4739-9131-7b109628411d
 r
-java:S1450="WRemove the "menuData" field and declare it as a local variable in the relevant methods.(³£–øÿÿÿÿ
-L
-java:S26965"6Make the enclosing method "static" or remove this set.(ûĞ¸—
-K
-java:S22095"5Change this instance-reference to a static reference.(ûĞ¸—
-V	java:S125="<This block of commented-out lines of code should be removed.(³£–øÿÿÿÿ
-G
-java:S1602[",Remove useless curly braces around statement(ÇË®ûùÿÿÿÿ
-@	java:S106f"+Replace this use of System.out by a logger.(ú•€Ë
-@	java:S106g"+Replace this use of System.out by a logger.(ÑºŠ‰
-@	java:S106h"+Replace this use of System.out by a logger.(¢ùù
-@	java:S106i"+Replace this use of System.out by a logger.(ú•€Ë
-P
-java:S2209k"5Change this instance-reference to a static reference.(…î˜±ÿÿÿÿÿ
-H
-java:S1602ˆ",Remove useless curly braces around statement(¸¯¥–úÿÿÿÿ
-O
-java:S1128"4Remove this unused import 'pizzashop.gui.OrdersGUI'.(¿ëÇÈøÿÿÿÿ
+java:S26965"6Make the enclosing method "static" or remove this set.(ûĞ¸—J$a9bf4157-695d-4fa0-b5dc-dd13dbf496ef
+q
+java:S22095"5Change this instance-reference to a static reference.(ûĞ¸—J$65f00c54-d0a0-4b6f-99c3-23365ace74bc
+|	java:S125="<This block of commented-out lines of code should be removed.(³£–øÿÿÿÿJ$b4884909-54a7-49a5-b51d-cf0cb93cb247
+m
+java:S1602[",Remove useless curly braces around statement(ÇË®ûùÿÿÿÿJ$4335f86b-3f49-4008-98fe-e178653a3131
+f	java:S106f"+Replace this use of System.out by a logger.(ú•€ËJ$855d4072-1078-410f-81b1-bcfc9a3f2640
+f	java:S106g"+Replace this use of System.out by a logger.(ÑºŠ‰J$4490ad1a-1802-4e63-bebb-1ab166af4107
+f	java:S106h"+Replace this use of System.out by a logger.(¢ùùJ$e33f18a5-e466-4c6a-8fe5-a2bfe6198826
+f	java:S106i"+Replace this use of System.out by a logger.(ú•€ËJ$a405e10f-29b3-4811-a6e8-7e379de4a651
+v
+java:S2209k"5Change this instance-reference to a static reference.(…î˜±ÿÿÿÿÿJ$0b5bc133-5406-4752-b8b8-6a038a5a87fe
+u
+java:S1128"4Remove this unused import 'pizzashop.gui.OrdersGUI'.(¿ëÇÈøÿÿÿÿJ$13d9d190-09bc-4cb4-adbe-f27b4bc25d23
