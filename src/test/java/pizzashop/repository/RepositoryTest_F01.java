@@ -67,9 +67,10 @@ class RepositoryTest_F01 {
         paymentRepository.add(payment);
         if(paymentRepository.getAll().get(paymentRepository.getAll().size()-1) == payment){
             paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
+            assert(true);
+        } else {
             assert(false);
         }
-        assert(true);
     }
 
     @Order(4)
@@ -81,9 +82,10 @@ class RepositoryTest_F01 {
         paymentRepository.add(payment);
         if(paymentRepository.getAll().get(paymentRepository.getAll().size()-1) == payment){
             paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
+            assert(true);
+        } else {
             assert(false);
         }
-        assert(true);
     }
 
     @Order(5)
@@ -117,9 +119,10 @@ class RepositoryTest_F01 {
         paymentRepository.add(payment);
         if(paymentRepository.getAll().get(paymentRepository.getAll().size()-1) == payment){
             paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
+            assert(true);
+        } else {
             assert(false);
         }
-        assert(true);
     }
 
     @Order(8)
@@ -131,9 +134,10 @@ class RepositoryTest_F01 {
         paymentRepository.add(payment);
         if(paymentRepository.getAll().get(paymentRepository.getAll().size()-1) == payment){
             paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
+            assert(true);
+        } else {
             assert(false);
         }
-        assert(true);
     }
 
     @Disabled
