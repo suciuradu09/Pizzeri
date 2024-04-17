@@ -17,3 +17,13 @@ a
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+j
+:src/test/java/pizzashop/repository/RepositoryTest_F01.java,c\b\cb0075da6f2c42473b23d97efe03002155e3e55a
+i
+9src/main/java/pizzashop/repository/PaymentRepository.java,e\f\ef6998620bd1015c5e4bddc19da8b0331cb111bf
+a
+1src/main/java/pizzashop/service/PizzaService.java,4\7\47bdc6c9cb205db26d090cbf3e15cc256314b822
+c
+3src/test/java/pizzashop/service/SeviceTest_F02.java,1\0\10e0d3b061e2229069fbea88f8892d7be5ee1c54
+A
+data/payments.txt,d\2\d2a5f732e98cfbd218db5005ce078c2272f24106

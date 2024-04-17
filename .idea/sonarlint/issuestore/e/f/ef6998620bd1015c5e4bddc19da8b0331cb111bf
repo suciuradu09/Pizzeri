@@ -1,10 +1,16 @@
 
-b
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦
-b
-java:S2095A"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı
-Q	java:S125"<This block of commented-out lines of code should be removed.(Èú’’
-Z
-java:S2147""DCombine this catch with the one at line 32, which has the same body.(ï­£Ä
-Q	java:S125<"<This block of commented-out lines of code should be removed.(Èú’’
-E	java:S106C"+Replace this use of System.out by a logger.(Ñ£±Ôúÿÿÿÿ
+ˆ
+java:S2095A"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ıJ$88cb655a-1e14-4fd0-bb2e-1f77b63e1659
+ˆ
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦J$bcc6851d-3b68-499f-8234-0f288ae241bf
+‡
+java:S1854"?Remove this useless assignment to local variable "classLoader".(ÊŒ¯­şÿÿÿÿ8Õ¶©Ùç1J$b75b32ca-01d9-494e-a1c4-67b5bdd7de65
+x
+java:S1481"0Remove this unused "classLoader" local variable.(ÊŒ¯­şÿÿÿÿ8×¶©Ùç1J$6fef60f0-e85a-4e1f-84b5-3fe62d4b1f26
+€
+java:S2147""DCombine this catch with the one at line 32, which has the same body.(ï­£ÄJ$0dbba264-f783-4670-9987-d34cbd98797d
+‡
+java:S1854<"?Remove this useless assignment to local variable "classLoader".(ÊŒ¯­şÿÿÿÿ8·üªÙç1J$cf3fd627-1c5c-4176-9b23-7ac397e41232
+x
+java:S1481<"0Remove this unused "classLoader" local variable.(ÊŒ¯­şÿÿÿÿ8¸üªÙç1J$20818da1-49d5-49aa-bb83-40ac1b438e38
+k	java:S106C"+Replace this use of System.out by a logger.(Ñ£±ÔúÿÿÿÿJ$e269fa04-2fb8-48ba-b739-9b788f23f98d
