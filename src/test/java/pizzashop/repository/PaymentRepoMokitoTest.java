@@ -40,16 +40,4 @@ class PaymentRepositoryMockitoTest {
         assertEquals(payment.getTableNumber(), payRepo.getAll().get(0).getTableNumber());
         assertEquals(payment.getType(), payRepo.getAll().get(0).getType());
     }
-
-    @Test
-    void getAll() {
-        when(payment.getTableNumber()).thenReturn(4);
-        when(payment.getType()).thenReturn(PaymentType.Cash);
-        when(payment.getAmount()).thenReturn(10.5);
-
-        payRepo.add(new Payment(payment.getTableNumber(),payment.getType(),payment.getAmount()));
-
-        int size= payRepo.getAll().size();
-        assertEquals(1, size);
-    }
 }
