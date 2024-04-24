@@ -7,16 +7,12 @@ import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 import pizzashop.repository.MenuRepository;
 import pizzashop.repository.PaymentRepository;
+import static org.mockito.Mockito.*;
 import pizzashop.validators.VPayment;
 
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
-class PizzaServiceTestIntegration {
+class PizzaServiceIntegrationTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;
     private static PizzaService service;

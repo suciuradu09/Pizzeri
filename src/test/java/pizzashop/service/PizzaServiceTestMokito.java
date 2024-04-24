@@ -1,6 +1,5 @@
 package pizzashop.service;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pizzashop.model.Payment;
@@ -9,14 +8,13 @@ import pizzashop.repository.MenuRepository;
 import pizzashop.repository.PaymentRepository;
 import pizzashop.validators.VPayment;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class PizzaServiceTestMockito {
+import static org.junit.jupiter.api.Assertions.*;
+
+class PizzaServiceMockitoTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;
     private static PizzaService service;

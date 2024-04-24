@@ -8,6 +8,7 @@ import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 import pizzashop.repository.MenuRepository;
 import pizzashop.repository.PaymentRepository;
+import static org.mockito.Mockito.*;
 
 import java.util.ArrayList;
 import java.util.List;
