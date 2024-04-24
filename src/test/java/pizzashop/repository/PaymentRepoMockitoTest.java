@@ -13,7 +13,7 @@ import pizzashop.model.PaymentType;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class PaymentRepositoryMockitoTest {
+class PaymentRepoMockitoTest {
     private static PaymentRepository payRepo;
     private static Payment payment;
 
