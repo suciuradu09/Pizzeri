@@ -2,6 +2,8 @@ package pizzashop.service;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 import pizzashop.repository.MenuRepository;
@@ -14,6 +16,7 @@ import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MockitoExtension.class)
 class PizzaServiceMockitoTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;

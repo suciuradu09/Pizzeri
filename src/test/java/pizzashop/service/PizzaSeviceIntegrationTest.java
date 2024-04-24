@@ -3,6 +3,8 @@ package pizzashop.service;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 import pizzashop.repository.MenuRepository;
@@ -12,6 +14,7 @@ import pizzashop.validators.VPayment;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MockitoExtension.class)
 class PizzaServiceIntegrationTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;

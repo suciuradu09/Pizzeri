@@ -5,12 +5,14 @@ import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MockitoExtension.class)
 class PaymentRepositoryMockitoTest {
     private static PaymentRepository payRepo;
     private static Payment payment;
