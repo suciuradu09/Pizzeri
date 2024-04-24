@@ -113,7 +113,6 @@
           <argLine>--add-opens pizzashop/pizzashop.service=ALL-UNNAMED</argLine>
         </configuration>
       </plugin>
-      <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <version>3.0.2</version>
@@ -126,7 +125,23 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
         <configuration>
-          <!--                <failIfNoTests>false</failIfNoTests>-->
+          <argLine>
+            --add-exports pizzashop/pizzashop.service=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.service=ALL-UNNAMED
+            --add-exports pizzashop/pizzashop.repository=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.repository=ALL-UNNAMED
+          </argLine>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.22.1</version>
+        <configuration>
+          <argLine>
+            --add-exports pizzashop/pizzashop.service=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.service=ALL-UNNAMED
+          </argLine>
         </configuration>
       </plugin>
       <plugin>
@@ -146,7 +161,6 @@
         <artifactId>maven-deploy-plugin</artifactId>
         <version>2.8.2</version>
       </plugin>
-      <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.7.1</version>
