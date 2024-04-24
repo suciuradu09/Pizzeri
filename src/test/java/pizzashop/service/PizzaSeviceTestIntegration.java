@@ -52,6 +52,19 @@ class PizzaServiceTestIntegration {
     }
 
     @Test
+    void getAll_step2() {
+        when(payment.getTableNumber()).thenReturn(4);
+        when(payment.getType()).thenReturn(PaymentType.Card);
+        when(payment.getAmount()).thenReturn(10.5);
+
+        service.addPayment(payment.getTableNumber(),payment.getType(),payment.getAmount());
+
+        double totalAmountCard = service.getTotalAmount(PaymentType.Card);
+
+        assertEquals(totalAmountCard,payment.getAmount());
+    }
+
+    @Test
     void add_step3() {
         Payment payment = new Payment(1,PaymentType.Card,21.5);
 
@@ -59,5 +72,18 @@ class PizzaServiceTestIntegration {
 
         int tableNr = service.getPayments().get(0).getTableNumber();
         assertEquals(tableNr,payment.getTableNumber());
+    }
+
+    @Test
+    void getAll_step3() {
+        Payment payment=new Payment(1,PaymentType.Card,12.0);
+
+        service.addPayment(payment.getTableNumber(),payment.getType(),payment.getAmount());
+
+
+        double totalAmountCash = service.getTotalAmount(PaymentType.Cash);
+        double totalAmountCard = service.getTotalAmount(PaymentType.Card);
+
+        assertEquals(totalAmountCard,payment.getAmount());
     }
 }

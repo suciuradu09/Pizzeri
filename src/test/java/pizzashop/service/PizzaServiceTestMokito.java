@@ -44,4 +44,20 @@ class PizzaServiceTestMockito {
         assertEquals(service.getPayments().get(0).getTableNumber(), payment.getTableNumber());
         assertEquals(service.getPayments().get(0).getType(), payment.getType());
     }
+
+    @Test
+    void getAll() {
+        Payment payment1=new Payment(4, PaymentType.Card,10.5);
+
+        when(payRepo.getAll()).thenReturn(Arrays.asList(payment1));
+
+        verify(payRepo,never()).getAll();
+
+        double totalAmountCash=service.getTotalAmount(PaymentType.Cash);
+        double totalAmountCard=service.getTotalAmount(PaymentType.Card);
+        assertEquals(0,totalAmountCash);
+        assertEquals(10.5,totalAmountCard);
+
+        verify(payRepo,times(2)).getAll();
+    }
 }
