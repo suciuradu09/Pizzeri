@@ -4,6 +4,7 @@ module pizzashop {
     requires javafx.controls;
     requires java.desktop;
 
+    opens pizzashop.service to javafx.base;
     opens pizzashop.model to javafx.base;
     exports pizzashop.model;
     opens pizzashop to javafx.fxml;
