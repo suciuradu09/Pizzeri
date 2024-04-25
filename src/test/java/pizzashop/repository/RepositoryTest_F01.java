@@ -36,9 +36,7 @@ class RepositoryTest_F01 {
         paymentRepository.writeAll();
     }
 
-    @Order(1)
-    @DisplayName("ECP_TEST_1")
-    @Tag("ECP")
+
     @Test
     void TC1() {
         Payment payment = payments.get(0);
@@ -47,9 +45,7 @@ class RepositoryTest_F01 {
         paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
     }
 
-    @Order(2)
-    @DisplayName("ECP_TEST_2")
-    @Tag("ECP")
+
     @Test
     void TC2() {
         Payment payment = payments.get(1);
@@ -58,9 +54,7 @@ class RepositoryTest_F01 {
         paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
     }
 
-    @Order(3)
-    @DisplayName("ECP_TEST_3")
-    @Tag("ECP")
+
     @Test
     void TC3() {
         Payment payment = payments.get(2);
@@ -73,9 +67,7 @@ class RepositoryTest_F01 {
         }
     }
 
-    @Order(4)
-    @DisplayName("ECP_TEST_4")
-    @Tag("ECP")
+
     @Test
     void TC4() {
         Payment payment = payments.get(3);
@@ -88,9 +80,7 @@ class RepositoryTest_F01 {
         }
     }
 
-    @Order(5)
-    @DisplayName("BVA_TEST_1")
-    @Tag("BVA")
+
     @Test
     void TC5() {
         Payment payment = payments.get(4);
@@ -99,9 +89,7 @@ class RepositoryTest_F01 {
         paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
     }
 
-    @Order(6)
-    @DisplayName("BVA_TEST_2")
-    @Tag("BVA")
+
     @Test
     void TC6() {
         Payment payment = payments.get(5);
@@ -110,9 +98,7 @@ class RepositoryTest_F01 {
         paymentRepository.getAll().remove(paymentRepository.getAll().size()-1);
     }
 
-    @Order(7)
-    @DisplayName("BVA_TEST_3")
-    @Tag("BVA")
+
     @Test
     void TC7() {
         Payment payment = payments.get(6);
@@ -125,9 +111,6 @@ class RepositoryTest_F01 {
         }
     }
 
-    @Order(8)
-    @DisplayName("BVA_TEST_4")
-    @Tag("BVA")
     @Test
     void TC8() {
         Payment payment = payments.get(7);
