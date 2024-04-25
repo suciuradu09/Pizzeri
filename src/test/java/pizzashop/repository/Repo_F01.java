@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RepositoryTest_F01 {
+class Repo_F01 {
     private static List<Payment> payments;
     private static PaymentRepository paymentRepository;
 
