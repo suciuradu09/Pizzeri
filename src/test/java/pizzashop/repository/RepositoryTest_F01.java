@@ -9,7 +9,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class RepositoryTest_F01 {
     private static List<Payment> payments;
     private static PaymentRepository paymentRepository;
