@@ -21,7 +21,7 @@ class ServiceTest_F02 {
 
     @BeforeAll
     @Timeout(1000)
-    static void setUp() {
+    public static void setUp() {
         MenuRepository repoMenu = new MenuRepository();
         PaymentRepository payRepo = new PaymentRepository();
         pizzaService = new PizzaService(repoMenu, payRepo);
@@ -33,12 +33,12 @@ class ServiceTest_F02 {
     }
 
     @AfterEach
-    void clear() {
+    public void clear() {
         pizzaService.getPayments().clear();
     }
 
     @Test
-    void TC1() {
+    public void TC1() {
         Payment p = payments.get(0);
         pizzaService.addPayment(p.getTableNumber(), p.getType(), p.getAmount());
 
@@ -46,7 +46,7 @@ class ServiceTest_F02 {
     }
 
     @Test
-    void TC2() {
+    public void TC2() {
         Payment p = payments.get(1);
         pizzaService.addPayment(p.getTableNumber(), p.getType(), p.getAmount());
 

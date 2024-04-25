@@ -13,7 +13,7 @@ import pizzashop.model.PaymentType;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class PaymentRepoMockitoTest {
+public class PaymentRepoMockitoTest {
     private static PaymentRepository payRepo;
     private static Payment payment;
 
@@ -30,7 +30,7 @@ class PaymentRepoMockitoTest {
     }
 
     @Test
-    void add() {
+    public void add() {
         when(payment.getTableNumber()).thenReturn(4);
         when(payment.getType()).thenReturn(PaymentType.Card);
         when(payment.getAmount()).thenReturn(10.5);
@@ -44,7 +44,7 @@ class PaymentRepoMockitoTest {
     }
 
     @Test
-    void getAll() {
+    public void getAll() {
         when(payment.getTableNumber()).thenReturn(4);
         when(payment.getType()).thenReturn(PaymentType.Cash);
         when(payment.getAmount()).thenReturn(10.5);

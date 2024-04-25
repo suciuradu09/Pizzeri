@@ -17,7 +17,7 @@ import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class PizzaServiceMockitoTest {
+public class PizzaServiceMockitoTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;
     private static PizzaService service;
@@ -32,7 +32,7 @@ class PizzaServiceMockitoTest {
     }
 
     @Test
-    void add() {
+    public void add() {
         VPayment spiedValidator = spy(validator);
         Payment payment = new Payment(4, PaymentType.Cash, 10.5);
         assert (spiedValidator.validate(payment).equals(new ArrayList<String>()));
@@ -47,7 +47,7 @@ class PizzaServiceMockitoTest {
     }
 
     @Test
-    void getAll() {
+    public void getAll() {
         Payment payment1=new Payment(4, PaymentType.Card,10.5);
 
         when(payRepo.getAll()).thenReturn(Arrays.asList(payment1));

@@ -15,7 +15,7 @@ import pizzashop.validators.VPayment;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class PizzaServiceIntegrationTest {
+public class PizzaServiceIntegrationTest {
     private static PaymentRepository payRepo;
     private static MenuRepository menuRepo;
     private static PizzaService service;
@@ -38,7 +38,7 @@ class PizzaServiceIntegrationTest {
     }
 
     @Test
-    void add_step2() {
+    public void add_step2() {
         when(payment.getTableNumber()).thenReturn(4);
         when(payment.getType()).thenReturn(PaymentType.Card);
         when(payment.getAmount()).thenReturn(10.5);
@@ -51,7 +51,7 @@ class PizzaServiceIntegrationTest {
     }
 
     @Test
-    void getAll_step2() {
+    public void getAll_step2() {
         when(payment.getTableNumber()).thenReturn(4);
         when(payment.getType()).thenReturn(PaymentType.Card);
         when(payment.getAmount()).thenReturn(10.5);
@@ -64,7 +64,7 @@ class PizzaServiceIntegrationTest {
     }
 
     @Test
-    void add_step3() {
+    public void add_step3() {
         Payment payment = new Payment(1,PaymentType.Card,21.5);
 
         service.addPayment(payment.getTableNumber(),payment.getType(),payment.getAmount());
@@ -74,7 +74,7 @@ class PizzaServiceIntegrationTest {
     }
 
     @Test
-    void getAll_step3() {
+    public void getAll_step3() {
         Payment payment=new Payment(1,PaymentType.Card,12.0);
 
         service.addPayment(payment.getTableNumber(),payment.getType(),payment.getAmount());
